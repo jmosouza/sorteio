@@ -59,31 +59,30 @@ img.alignMiddle {
 }
 
 #result {
-  margin-top: 20vh;
+  margin-top: 0;
   margin-bottom: 0;
   font-family: 'Bungee Shade', sans-serif;
-  font-size: 20em;
+  font-size: 10em;
 }
 
 /* smaller result text on mobile */
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   #result {
-    font-size: 10em;
-  }
-}
-
-/* push result text down to middle on mobile portrait */
-@media (max-width: 768px) and (orientation: portrait) {
-  #result {
-    margin-top: 30vh;
+    font-size: 20em;
   }
 }
 
 /* push result text up to top on mobile limited height */
-@media (max-height: 400px) {
+@media (min-height: 568px) {
   #result {
-    margin-top: 0;
-    font-size: 10em;
+    margin-top: 10vh;
+  }
+}
+
+/* push result text up to top on mobile limited height */
+@media (min-height: 1024px) {
+  #result {
+    margin-top: 20vh;
   }
 }
 
