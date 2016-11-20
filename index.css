@@ -13,6 +13,7 @@ html {
 }
 
 input {
+  width: 60px;
   background: none;
 }
 
@@ -22,8 +23,8 @@ button {
 }
 
 input, button {
-  height:        40px;
-  width:         40px;
+  min-height:    40px;
+  min-width:     40px;
   font-size:     1em;
   font-weight:   700;
   text-align:    center;
@@ -49,9 +50,6 @@ img.alignMiddle {
   vertical-align: middle;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button { margin-left: -10px; }
-
 .centered {
   text-align: center;
 }
@@ -67,23 +65,32 @@ input::-webkit-inner-spin-button { margin-left: -10px; }
   font-size: 20em;
 }
 
-/* media queries */
-
+/* smaller result text on mobile */
 @media (max-width: 768px) {
   #result {
     font-size: 10em;
   }
 }
 
+/* push result text down to middle on mobile portrait */
 @media (max-width: 768px) and (orientation: portrait) {
   #result {
     margin-top: 30vh;
   }
 }
 
-@media (max-device-height: 400px) {
+/* push result text up to top on mobile limited height */
+@media (max-height: 400px) {
   #result {
     margin-top: 0;
     font-size: 10em;
+  }
+}
+
+/* fix number input spinner spacing on desktop */
+@media (min-width: 1025px) {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    margin-left: -10px;
   }
 }
