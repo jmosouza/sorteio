@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Open+Sans:700" rel="stylesheet">
+    <link href="index.css" rel="stylesheet"></style>
+    <title>sorte.io</title>
+  </head>
+  <body>
+    <p id="result" aria-live="assertive">…</p>
+    <form id="drawForm">
+      <input id="minDraw" type="number" min="-9999" max="9999" step="1" aria-label="sorteio mínimo" tabindex="2" value="1"/>
+      <input id="maxDraw" type="number" min="-9999" max="9999" step="1" aria-label="sorteio máximo" tabindex="3" value="100"/>
+      <button type="submit" aria-label="enter para sortear" tabindex="1">↻</button>
+    </form>
+  </body>
+  <script src="random.min.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+</html>
