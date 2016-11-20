@@ -8,12 +8,31 @@
     <title>sorte.io</title>
   </head>
   <body>
-    <p id="result" aria-live="assertive">…</p>
+
+    <!-- result -->
+    <p id="result" class="centered" aria-live="assertive">?</p>
+
+    <!-- draw form -->
     <form id="drawForm">
-      <input id="minDraw" type="number" min="-9999" max="9999" step="1" aria-label="sorteio mínimo" tabindex="2" value="1"/>
-      <input id="maxDraw" type="number" min="-9999" max="9999" step="1" aria-label="sorteio máximo" tabindex="3" value="100"/>
-      <button type="submit" aria-label="enter para sortear" tabindex="1">↻</button>
+      <button type="submit" aria-label="enter para sortear">↻</button>
+      de&nbsp;
+      <input id="minDraw" type="number" min="-9999" max="9999" step="1" aria-label="sorteio mínimo" value="1"/>
+      a&nbsp;
+      <input id="maxDraw" type="number" min="-9999" max="9999" step="1" aria-label="sorteio máximo" value="100"/>
     </form>
+
+    <!-- footer -->
+    <footer>
+      <p class="centered">
+        <small>
+          <a href="https://github.com/jmosouza">
+            <img class="alignMiddle" src="github32.png" width="16">
+            jmosouza
+          </a>
+        </small>
+      </p>
+    </footer>
+
   </body>
   <script src="random.min.js" charset="utf-8"></script>
   <script src="index.js" charset="utf-8"></script>
