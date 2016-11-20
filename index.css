@@ -41,9 +41,10 @@ a {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  background: #93cede;
 }
 
 img.alignMiddle {
@@ -56,6 +57,7 @@ img.alignMiddle {
 
 #drawForm {
   text-align: center;
+  margin-bottom: 160px;
 }
 
 #result {
